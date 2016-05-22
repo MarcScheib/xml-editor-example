@@ -1,0 +1,100 @@
+/** Loading Screen **/
+.splash {
+  text-align: center;
+  margin: 10% 0 0 0;
+  box-sizing: border-box;
+}
+
+.splash .message {
+  font-size: 72px;
+  line-height: 72px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.splash .fa-spinner {
+  text-align: center;
+  display: inline-block;
+  font-size: 72px;
+  margin-top: 50px;
+}
+
+/** layout **/
+#editor-host {
+  margin-top: 15px;
+}
+
+.card-dark {
+  background-color: #333;
+  border-color: #333;
+}
+
+/** editor **/
+.drag-source > div {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.drop-target-marker {
+  border: 1px dashed #e5e5e5;
+  border-radius: .25rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+tag .card {
+  border-style: dashed;
+}
+
+tag .card-header {
+  display: inline-block;
+  cursor: pointer;
+}
+
+tag .card-header, tag .card-header:first-child {
+  border-right: 1px dashed #e5e5e5;
+  border-bottom-style: dashed;
+  border-radius: .25rem 0;
+}
+
+tag .card-no-block {
+  border-radius: 0 !important;
+  border-bottom: 0 !important;
+}
+
+tag .card-selected {
+  border-color: #0275d8;
+}
+
+tag .card-selected > .card-header {
+  background-color: #0275d8;
+  color: #fff;
+}
+
+.tag-tools {
+  float: right;
+  padding: 10px 15px;
+}
+
+.tag-tools .fa-edit {
+  color: #26b725;
+}
+
+.tag-tools .fa-clone {
+  color: #0088c3;
+}
+
+.tag-tools .fa-trash-o {
+  color: #c30006;
+}
+
+ai-dialog-overlay.active {
+  background-color: #000;
+  opacity: .75 !important;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  background: #fff;
+}
