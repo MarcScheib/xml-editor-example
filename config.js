@@ -231,6 +231,55 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     }
   },
+  depCache: {
+    "npm:dragula@3.7.1.js": [
+      "npm:dragula@3.7.1/dragula.js"
+    ],
+    "npm:dragula@3.7.1/dragula.js": [
+      "contra/emitter",
+      "crossvent",
+      "./classes"
+    ],
+    "npm:crossvent@1.5.4.js": [
+      "npm:crossvent@1.5.4/src/crossvent.js"
+    ],
+    "npm:contra@1.9.4/emitter.js": [
+      "atoa",
+      "./debounce"
+    ],
+    "npm:atoa@1.0.0.js": [
+      "npm:atoa@1.0.0/atoa.js"
+    ],
+    "npm:crossvent@1.5.4/src/crossvent.js": [
+      "custom-event",
+      "./eventmap"
+    ],
+    "npm:contra@1.9.4/debounce.js": [
+      "ticky"
+    ],
+    "npm:custom-event@1.0.0.js": [
+      "npm:custom-event@1.0.0/index.js"
+    ],
+    "npm:ticky@1.0.1.js": [
+      "npm:ticky@1.0.1/ticky-browser.js"
+    ],
+    "github:twbs/bootstrap@4.0.0-alpha.2.js": [
+      "github:twbs/bootstrap@4.0.0-alpha.2/js/bootstrap"
+    ],
+    "github:twbs/bootstrap@4.0.0-alpha.2/js/bootstrap.js": [
+      "jquery",
+      "tether"
+    ],
+    "github:HubSpot/tether@1.3.2.js": [
+      "github:HubSpot/tether@1.3.2/js/tether"
+    ],
+    "npm:jquery@2.2.4.js": [
+      "npm:jquery@2.2.4/dist/jquery.js"
+    ],
+    "github:components/jquery@2.2.1.js": [
+      "github:components/jquery@2.2.1/jquery"
+    ]
+  },
   bundles: {
     "vendor-753c08a8e7.js": [
       "github:HubSpot/tether@1.3.2.js",
@@ -256,10 +305,12 @@ System.config({
       "npm:ticky@1.0.1.js",
       "npm:ticky@1.0.1/ticky-browser.js"
     ],
-    "app-build-ab0e1cdc2f.js": [
+    "app-build-85916cf009.js": [
       "drag-and-drop.js",
       "main.js",
       "model/base-tag.js",
+      "model/cleanupgroup.html!github:systemjs/plugin-text@0.0.4.js",
+      "model/cleanupgroup.js",
       "model/device.html!github:systemjs/plugin-text@0.0.4.js",
       "model/device.js",
       "model/discover.js",
@@ -272,6 +323,8 @@ System.config({
       "model/properties.js",
       "model/property.html!github:systemjs/plugin-text@0.0.4.js",
       "model/property.js",
+      "model/subgroup.html!github:systemjs/plugin-text@0.0.4.js",
+      "model/subgroup.js",
       "model/user.html!github:systemjs/plugin-text@0.0.4.js",
       "model/user.js",
       "util/util.js",
@@ -379,55 +432,6 @@ System.config({
       "npm:aurelia-templating@1.0.0-beta.1.2.7/aurelia-templating.js",
       "npm:prismjs@1.5.0.js",
       "npm:prismjs@1.5.0/prism.js"
-    ]
-  },
-  depCache: {
-    "npm:dragula@3.7.1.js": [
-      "npm:dragula@3.7.1/dragula.js"
-    ],
-    "npm:dragula@3.7.1/dragula.js": [
-      "contra/emitter",
-      "crossvent",
-      "./classes"
-    ],
-    "npm:crossvent@1.5.4.js": [
-      "npm:crossvent@1.5.4/src/crossvent.js"
-    ],
-    "npm:contra@1.9.4/emitter.js": [
-      "atoa",
-      "./debounce"
-    ],
-    "npm:atoa@1.0.0.js": [
-      "npm:atoa@1.0.0/atoa.js"
-    ],
-    "npm:crossvent@1.5.4/src/crossvent.js": [
-      "custom-event",
-      "./eventmap"
-    ],
-    "npm:contra@1.9.4/debounce.js": [
-      "ticky"
-    ],
-    "npm:custom-event@1.0.0.js": [
-      "npm:custom-event@1.0.0/index.js"
-    ],
-    "npm:ticky@1.0.1.js": [
-      "npm:ticky@1.0.1/ticky-browser.js"
-    ],
-    "github:twbs/bootstrap@4.0.0-alpha.2.js": [
-      "github:twbs/bootstrap@4.0.0-alpha.2/js/bootstrap"
-    ],
-    "github:twbs/bootstrap@4.0.0-alpha.2/js/bootstrap.js": [
-      "jquery",
-      "tether"
-    ],
-    "npm:jquery@2.2.4.js": [
-      "npm:jquery@2.2.4/dist/jquery.js"
-    ],
-    "github:HubSpot/tether@1.3.2.js": [
-      "github:HubSpot/tether@1.3.2/js/tether"
-    ],
-    "github:components/jquery@2.2.1.js": [
-      "github:components/jquery@2.2.1/jquery"
     ]
   }
 });
