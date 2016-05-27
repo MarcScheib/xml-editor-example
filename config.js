@@ -256,7 +256,7 @@ System.config({
       "npm:ticky@1.0.1.js",
       "npm:ticky@1.0.1/ticky-browser.js"
     ],
-    "app-build-72e27b44cb.js": [
+    "app-build-dba726e0a0.js": [
       "drag-and-drop.js",
       "main.js",
       "model/base-tag.js",
